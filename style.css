@@ -115,7 +115,7 @@ footer{
     display: block;
 
     margin: 0px auto 10px auto;
-    padding: 5px 5px 3px 5px;
+    padding: 0px;
     border: 0px;
 
     width: 200px;
@@ -191,4 +191,46 @@ footer{
     color: rgb(225, 225, 225);
     text-align: center;
     font-size: 20px;
+}
+
+@media (min-width: 768px) /*and (max-width: 1279px)*/ {
+    header{
+        font-size: 40px;
+    }
+    #langChanger{
+        margin: 8.5px;
+    
+        width: 50px;
+        height: 50px;
+    }
+    footer{
+        font-size: 30px;
+    }
+    .usedLetter{
+        width: 35px;
+        height: 35px;
+        
+        font-size: 40px;
+    }
+    #gameDiv > img{
+        width: 250px;
+    }
+    .letter{
+        width: 35px;
+        height: 35px;
+        
+        font-size: 40px;
+    }
+    #keyboardLabel{
+        font-size: 40px;
+    }
+    .kbKey{
+        width: 35px;
+        height: 35px;
+        
+        font-size: 30px;
+    }
+    #restartButton{
+        font-size: 40px;
+    }
 }
