@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <head>
+        <title id="title">Hangman</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="StartGame()">
+        <header id="header">Hangman</header>
+        <img id="langChanger" src="Images/langPTBR.png" onclick="ChangeLang()">
+        <div id="wlDiv">
+            <p>You Won!</p>
+        </div>
+        <div id="usedLettersDiv">
+            <p class="usedLetter">A</p>
+            <p class="usedLetter">B</p>
+            <p class="usedLetter">C</p>
+        </div>
+        <div id="gameDiv">
+            <img id="hangmanImg" src="Images/Hangman_0.png">
+            <div id="wordDiv">
+                <p class="letter" id="l0">W</p>
+                <p class="letter" id="l1">O</p>
+                <p class="letter" id="l2">R</p>
+                <p class="letter" id="l3">D</p>
+            </div>
+            <div id="keyboard">
+                <p id="keyboardLabel">Try a letter:</p><br>
+                <button class="kbKey" id="keyQ" onclick="TryLetter('Q')">Q</button>
+                <button class="kbKey" id="keyW" onclick="TryLetter('W')">W</button>
+                <button class="kbKey" id="keyE" onclick="TryLetter('E')">E</button>
+                <button class="kbKey" id="keyR" onclick="TryLetter('R')">R</button>
+                <button class="kbKey" id="keyT" onclick="TryLetter('T')">T</button>
+                <button class="kbKey" id="keyY" onclick="TryLetter('Y')">Y</button>
+                <button class="kbKey" id="keyU" onclick="TryLetter('U')">U</button>
+                <button class="kbKey" id="keyI" onclick="TryLetter('I')">I</button>
+                <button class="kbKey" id="keyO" onclick="TryLetter('O')">O</button>
+                <button class="kbKey" id="keyP" onclick="TryLetter('P')">P</button><br>
+                <button class="kbKey" id="keyA" onclick="TryLetter('A')">A</button>
+                <button class="kbKey" id="keyS" onclick="TryLetter('S')">S</button>
+                <button class="kbKey" id="keyD" onclick="TryLetter('D')">D</button>
+                <button class="kbKey" id="keyF" onclick="TryLetter('F')">F</button>
+                <button class="kbKey" id="keyG" onclick="TryLetter('G')">G</button>
+                <button class="kbKey" id="keyH" onclick="TryLetter('H')">H</button>
+                <button class="kbKey" id="keyJ" onclick="TryLetter('J')">J</button>
+                <button class="kbKey" id="keyK" onclick="TryLetter('K')">K</button>
+                <button class="kbKey" id="keyL" onclick="TryLetter('L')">L</button>
+                <button class="kbKey" id="keyÇ" onclick="TryLetter('Ç')">Ç</button><br>
+                <button class="kbKey" id="keyZ" onclick="TryLetter('Z')">Z</button>
+                <button class="kbKey" id="keyX" onclick="TryLetter('X')">X</button>
+                <button class="kbKey" id="keyC" onclick="TryLetter('C')">C</button>
+                <button class="kbKey" id="keyV" onclick="TryLetter('V')">V</button>
+                <button class="kbKey" id="keyB" onclick="TryLetter('B')">B</button>
+                <button class="kbKey" id="keyN" onclick="TryLetter('N')">N</button>
+                <button class="kbKey" id="keyM" onclick="TryLetter('M')">M</button>
+            </div>
+            <button id="restartButton" onclick="StartGame()">Restart</button>
+        </div>
+        <footer>
+            <p>Made by <a href="https://github.com/Rafael-Nunes-Silva" target="_blank">Rafael-Nunes-Silva</a></p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
