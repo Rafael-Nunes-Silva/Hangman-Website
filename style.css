@@ -193,7 +193,7 @@ footer{
     font-size: 20px;
 }
 
-@media (min-width: 768px) /*and (max-width: 1279px)*/ {
+@media (orientation: landscape) and (min-width: 768px) {
     header{
         font-size: 40px;
     }
@@ -232,5 +232,54 @@ footer{
     }
     #restartButton{
         font-size: 40px;
+    }
+}
+@media (orientation: portrait) and (min-width: 768px) {
+    header{
+        font-size: 100px;
+    }
+    #wlDiv{
+        top: calc((100vh - 80px)/2);
+        left: calc((100vw - 400px)/2);
+
+        width: 400px;
+
+        font-size: 80px;
+    }
+    #langChanger{
+        margin: 17.5px;
+    
+        width: 100px;
+        height: 100px;
+    }
+    footer{
+        font-size: 50px;
+    }
+    .usedLetter{
+        width: 65px;
+        height: 65px;
+        
+        font-size: 70px;
+    }
+    #gameDiv > img{
+        width: 500px;
+    }
+    .letter{
+        width: 65px;
+        height: 65px;
+        
+        font-size: 70px;
+    }
+    #keyboardLabel{
+        font-size: 50px;
+    }
+    .kbKey{
+        width: 55px;
+        height: 55px;
+        
+        font-size: 50px;
+    }
+    #restartButton{
+        font-size: 80px;
     }
 }
