@@ -62,9 +62,6 @@ header{
 }
 footer{
     background-color: rgb(5, 5, 5);
-
-    position: sticky;
-    bottom: 0px;
     
     width: 100%;
 
